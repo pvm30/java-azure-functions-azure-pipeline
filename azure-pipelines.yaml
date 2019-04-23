@@ -38,7 +38,9 @@ steps:
   inputs:
     azureSubscription: '$(azureSubcriptionKey)'
     appType: functionApp
-    WebAppName: javapipeline2
+    # The real problem is this this application should already exist
+    # WebAppName: javapipeline2
+    WebAppName: pepep
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     enableCustomDeployment: true
     DeploymentType: runFromZip
